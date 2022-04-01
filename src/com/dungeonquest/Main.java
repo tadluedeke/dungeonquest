@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Boolean newRound = true;
+        boolean newRound = true;
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name, Hero.");
@@ -105,7 +105,7 @@ public class Main {
                 System.out.println("--------------------------------------------------------");
                 monsterLP--;
             }
-            if(monsterLP <= 0) {
+            if(monsterLP <= 0 && heroLP > 0) {
                 System.out.println("You cleave the " + monster + " in half! You live to fight another day.");
                 newRound = false;
             } else if(heroLP == 0) {
